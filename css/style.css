@@ -1,26 +1,28 @@
 .fb-post-outer {
-    background: rgb(60,89,152);
-    padding: 50px;
-	min-height: 750px;
+   background: rgb(60,89,152);
+   padding: 50px;
+    min-height: 1920px;
 }
 .fb-post-inner {
-    background: white;
-    padding: 50px;
-    border-radius: 10px;
-    position: absolute;
-    top: 50%;
-	left: 50%;
-    transform: translate(-50%, -50%);
-	width: calc(100% - 100px);
+   background: white;
+   padding: 50px;
+   border-radius: 10px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: calc(100% - 100px);
 }
 .fb-post-inner .left {
     float: left;
-    width: 50%;
-    padding-right: 50px;
+    width: 100%;
+    /* padding-right: 50px; */
+    margin-bottom: 50px;
 }
 .fb-post-inner .right {
     float: left;
-    width: 50%;
+    width: 100%;
+    margin-bottom: 50px;
 }
 .fb-post-inner .profile {
     float: left;
@@ -72,6 +74,7 @@
     display: flex;
     align-items: center;
     float: left;
+    padding-right: 20px;
 }
 .fb-post-inner .count {
     font-size: 18px;
@@ -82,10 +85,18 @@
 .fb-post-inner .find-us {
     float: right;
     margin-top: 10px;
-}
-.fb-post-inner .find-us {
     font-size: 20px;
-    color: #5890ffk
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+}
+.img_logo{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 33%;
+    float: right;
 }
 @media screen and (max-width: 991px) {
     .fb-post-inner .left {
@@ -98,5 +109,25 @@
         float: none;
         width: 100%;
         margin: 30px 0 30px 0;
-    }    
+    }
+}
+.info-bar {
+    position: absolute;
+    top: calc(100% + 10px);
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+}
+
+.fb-post-inner.big-fonts .name {
+    font-size: 30px;
+    line-height: 1;
+}
+.fb-post-inner.big-fonts .time {
+    font-size: 20px;
+    line-height: 1;
+}
+.fb-post-inner.big-fonts .content {
+    font-size: 30px;
 }
